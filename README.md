@@ -1,26 +1,27 @@
-# 项目名称
+# CAPTCHA Classification Project
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+This project implements a CAPTCHA classification system using deep learning models. The system consists of two primary components: a model for predicting the length of the CAPTCHA and a character recognition model that decodes the CAPTCHA based on its predicted length. The models are built using PyTorch and utilize pre-trained ResNet architectures for character classification.
 
-## 目录
-- [简介](#简介)
-- [功能](#功能)
-- [安装](#安装)
-- [使用说明](#使用说明)
-- [配置说明](#配置说明)
-- [贡献指南](#贡献指南)
-- [许可](#许可)
+## Features
 
-## 简介
-项目名称是一款[简要描述项目目标或功能]的应用，旨在帮助[目标用户或解决的问题]。
+- **Length Classification**: A CNN-based model that predicts the length of the CAPTCHA (from 2 to 6 characters).
+- **Character Recognition**: A modular character recognition system that uses ResNet architectures (e.g., ResNet18, ResNet34, ResNet50) to decode the CAPTCHA characters.
+- **Batch Processing**: Efficient handling of multiple images through batch processing.
+- **Customizable**: Supports customization of image dimensions and model parameters.
 
-## 功能
-- 功能1：功能描述
-- 功能2：功能描述
-- 功能3：功能描述
+## Requirements
 
-## 安装
+- Python 3.6+
+- PyTorch
+- torchvision
+- Pillow
+- logging
 
-1. 克隆仓库到本地:
+## Installation
+
+1. Clone the repository:
+
    ```bash
-   git clone https://github.com/username/repository.git
+   git clone <repository-url>
+   cd <repository-directory>
+
