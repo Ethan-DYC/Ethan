@@ -10,7 +10,7 @@ import captcha.image
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--width', help='Width of captcha image', type=int, default=192)
+    parser.add_argument('--width', help='Width of captcha image', type=int, default=198)
     parser.add_argument('--height', help='Height of captcha image', type=int, default=96)
     parser.add_argument('--count', help='How many captchas to generate', type=int, default=10000)
     parser.add_argument('--output-dir', help='Where to store the generated captchas', type=str, default='train')
